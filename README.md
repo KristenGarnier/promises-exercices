@@ -42,9 +42,13 @@ Chaque exercice est accompagné d’un énoncé clair expliquant :
    Parcourez les dossiers/fichiers d’exercices, commencez par les plus simples. Chaque exercice peut être présenté dans un fichier séparé (par exemple `exercise1.js`, `exercise2.js`, etc.) ou dans des dossiers distincts.
    
 3. **Exécuter un exercice** :  
-   La plupart des exercices étant simples, vous pouvez les exécuter directement avec Node.js :  
+   La plupart des exercices étant simples et viennent avec des tests pour valider, vous pouvez les exécuter de deux manière :  
    ```bash
-   node exercise1.js
+   // Lance tous les tests
+   npm test 
+
+   // Lance seulement un fichier de test
+   npm test -- {n° de l exercice}.test.js
    ```
    
    Pour les exercices faisant appel à `fetch`, vous pourrez soit utiliser une version de Node.js compatible avec `fetch`, soit installer une dépendance (par exemple `node-fetch`), ou lancer votre code dans un environnement tel que le navigateur ou un outil en ligne.
